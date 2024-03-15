@@ -23,6 +23,7 @@ final class GroupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        updateViewsHeight()
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -225,7 +225,8 @@ extension RewindViewController {
         
         imageView.setWidth(UIScreen.main.bounds.width - 15)
         imageView.setHeight(UIScreen.main.bounds.width - 15)
-        imageView.pinTop(to: view.topAnchor, UIScreen.main.bounds.height / 4)
+        let devider: CGFloat = view.frame.height < 700 ? 5 : 4
+        imageView.pinTop(to: view.topAnchor, UIScreen.main.bounds.height / devider)
         imageView.pinCenterX(to: view.centerXAnchor)
     }
     
